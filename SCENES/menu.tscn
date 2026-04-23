@@ -9,8 +9,11 @@ bg_color = Color(0.4392157, 0.10980392, 0.8235294, 1)
 [node name="Node" type="Node" unique_id=1059490082]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=20692630]
-offset_right = 1600.0
-offset_bottom = 1024.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_qnims")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=769201863]

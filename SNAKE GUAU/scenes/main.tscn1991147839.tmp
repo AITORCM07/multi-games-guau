@@ -11,16 +11,9 @@
 script = ExtResource("1_jyhfs")
 snake_scene = ExtResource("2_tbgi4")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1700474198]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 50.0
-offset_right = -806.0
-offset_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Background" type="Sprite2D" parent="." unique_id=1007757659]
+position = Vector2(555.00006, 561.49994)
+scale = Vector2(1.11, 1.023)
 texture = ExtResource("3_tefeu")
 
 [node name="Hud" parent="." unique_id=1220201479 instance=ExtResource("4_o6xl0")]

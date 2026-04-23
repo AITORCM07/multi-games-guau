@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c73yohi5v4n6b"]
 
-[ext_resource type="Script" uid="uid://b316ax4ei3tvt" path="res://game_over_menu.gd" id="1_6ebp1"]
-[ext_resource type="FontFile" uid="uid://b21ca3r3dmbb5" path="res://assets/MaldiniBold.ttf" id="2_cwb3k"]
+[ext_resource type="Script" uid="uid://b316ax4ei3tvt" path="res://SNAKE GUAU/game_over_menu.gd" id="1_6ebp1"]
+[ext_resource type="FontFile" uid="uid://b21ca3r3dmbb5" path="res://SNAKE GUAU/assets/MaldiniBold.ttf" id="2_cwb3k"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccgoi"]
 bg_color = Color(0, 0.23921569, 0.30588236, 1)
@@ -53,10 +53,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RestartButton" type="Button" parent="." unique_id=1932627399]
-offset_left = 375.0
-offset_top = 545.0
-offset_right = 625.0
-offset_bottom = 608.0
+offset_left = 835.0
+offset_top = 532.0
+offset_right = 1085.0
+offset_bottom = 595.0
 theme_override_fonts/font = ExtResource("2_cwb3k")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_81acl")

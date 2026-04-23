@@ -12,6 +12,8 @@ bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rc7yq"]
 bg_color = Color(0.67058825, 0, 0.050980393, 1)
 
+[sub_resource type="GDScript" id="GDScript_rc7yq"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n1uga"]
 bg_color = Color(0.67058825, 0, 0.050980393, 1)
 
@@ -31,8 +33,11 @@ bg_color = Color(0, 0.12941177, 0.6, 1)
 script = ExtResource("1_ph80v")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=76039005]
-offset_right = 1600.0
-offset_bottom = 1024.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_eg4wn")
 
 [node name="Label" type="Label" parent="." unique_id=1450324271]
@@ -54,21 +59,22 @@ vertical_icon_alignment = 2
 script = ExtResource("2_fiq7m")
 
 [node name="SNAKE GUAU" type="Button" parent="." unique_id=959808571]
-offset_left = 131.0
-offset_top = 472.0
-offset_right = 379.0
-offset_bottom = 508.0
+offset_left = 185.0
+offset_top = 487.0
+offset_right = 433.0
+offset_bottom = 523.0
 theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_rc7yq")
 text = "SNAKE GUAU"
 vertical_icon_alignment = 2
+script = SubResource("GDScript_rc7yq")
 
 [node name="TETRIS GUAU" type="Button" parent="." unique_id=1605129936]
-offset_left = 635.0
-offset_top = 471.0
-offset_right = 883.0
-offset_bottom = 515.0
+offset_left = 789.0
+offset_top = 480.0
+offset_right = 1037.0
+offset_bottom = 524.0
 theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_n1uga")
@@ -76,10 +82,10 @@ text = "TETRIS GUAU"
 vertical_icon_alignment = 2
 
 [node name="PIG PONG GUAU" type="Button" parent="." unique_id=342640170]
-offset_left = 1177.0
-offset_top = 470.0
-offset_right = 1425.0
-offset_bottom = 514.0
+offset_left = 1430.0
+offset_top = 491.0
+offset_right = 1678.0
+offset_bottom = 535.0
 theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_wp3qs")
@@ -87,10 +93,10 @@ text = "PIG PONG GUAU"
 vertical_icon_alignment = 2
 
 [node name="SPACE INAVDERS GUAU" type="Button" parent="." unique_id=1297707196]
-offset_left = 92.0
-offset_top = 955.0
-offset_right = 445.0
-offset_bottom = 1011.0
+offset_left = 146.0
+offset_top = 994.0
+offset_right = 499.0
+offset_bottom = 1050.0
 theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_3bkfc")
@@ -98,10 +104,10 @@ text = "SPACE INAVDERS GUAU"
 vertical_icon_alignment = 2
 
 [node name="BILLAR GUAU" type="Button" parent="." unique_id=610552162]
-offset_left = 1194.0
-offset_top = 950.0
-offset_right = 1408.0
-offset_bottom = 1006.0
+offset_left = 1462.0
+offset_top = 1006.0
+offset_right = 1676.0
+offset_bottom = 1062.0
 theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_hbq30")
@@ -109,10 +115,10 @@ text = "BILLAR GUAU"
 vertical_icon_alignment = 2
 
 [node name="BUSCA MINES GUAU" type="Button" parent="." unique_id=1073378359]
-offset_left = 619.0
-offset_top = 951.0
-offset_right = 923.0
-offset_bottom = 1007.0
+offset_left = 758.0
+offset_top = 1002.0
+offset_right = 1062.0
+offset_bottom = 1058.0
 theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_libui")
@@ -127,4 +133,9 @@ offset_right = -208.0
 offset_bottom = -130.0
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="VOLVER AL MENU PRINCIPAL" to="VOLVER AL MENU PRINCIPAL" method="_on_pressed"]
+[connection signal="pressed" from="VOLVER AL MENU PRINCIPAL" to="." method="_on_volver_al_menu_principal_pressed"]
+[connection signal="pressed" from="SNAKE GUAU" to="." method="_on_snake_guau_pressed"]
+[connection signal="pressed" from="TETRIS GUAU" to="." method="_on_tetris_guau_pressed"]
+[connection signal="pressed" from="PIG PONG GUAU" to="." method="_on_pig_pong_guau_pressed"]
+[connection signal="pressed" from="SPACE INAVDERS GUAU" to="." method="_on_space_inavders_guau_pressed"]
+[connection signal="pressed" from="BILLAR GUAU" to="." method="_on_billar_guau_pressed"]
