@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c541yogshrivy"]
+
+[ext_resource type="Texture2D" uid="uid://dfx7hw6aah11o" path="res://multi-games.png" id="1_qnims"]
+[ext_resource type="Script" uid="uid://dotyjbrug8ao6" path="res://SCRIPTS BOTONES/JUEGOS.gd" id="2_vbyvk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeqcs"]
+bg_color = Color(0.4392157, 0.10980392, 0.8235294, 1)
+
+[node name="Node" type="Node" unique_id=1059490082]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=20692630]
+offset_right = 1600.0
+offset_bottom = 1024.0
+texture = ExtResource("1_qnims")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=769201863]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -41.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="🌌JUEGOS🚀" type="Button" parent="VBoxContainer" unique_id=458021462]
+layout_mode = 2
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_yeqcs")
+text = "🌌JUEGOS🚀"
+vertical_icon_alignment = 2
+script = ExtResource("2_vbyvk")
+
+[connection signal="pressed" from="VBoxContainer/🌌JUEGOS🚀" to="VBoxContainer/🌌JUEGOS🚀" method="_on_pressed"]

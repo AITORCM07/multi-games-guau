@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://8riff1k43xor"]
+
+[ext_resource type="Script" uid="uid://quyeclpq1pxe" path="res://SCRIPTS BOTONES/selecion_de_juegos.gd" id="1_ph80v"]
+[ext_resource type="Texture2D" uid="uid://bhewdjmp244ar" path="res://mutlijuegos.png" id="2_eg4wn"]
+[ext_resource type="Script" uid="uid://coxi8jofwscdk" path="res://SCRIPTS BOTONES/volver_al_menu_principal.gd" id="2_fiq7m"]
+[ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="2_rc7yq"]
+[ext_resource type="FontFile" uid="uid://dxjmcldgtr0pv" path="res://LETRAS/kirifont/KiriFont.ttf" id="2_xtsuu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eg4wn"]
+bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rc7yq"]
+bg_color = Color(0.67058825, 0, 0.050980393, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n1uga"]
+bg_color = Color(0.67058825, 0, 0.050980393, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wp3qs"]
+bg_color = Color(0.67126316, 0, 0.051185273, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bkfc"]
+bg_color = Color(0, 0.12941177, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hbq30"]
+bg_color = Color(0, 0.12941177, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_libui"]
+bg_color = Color(0, 0.12941177, 0.6, 1)
+
+[node name="Node" type="Node" unique_id=915825007]
+script = ExtResource("1_ph80v")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=76039005]
+offset_right = 1600.0
+offset_bottom = 1024.0
+texture = ExtResource("2_eg4wn")
+
+[node name="Label" type="Label" parent="." unique_id=1450324271]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="VOLVER AL MENU PRINCIPAL" type="Button" parent="." unique_id=1258070778]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -389.0
+offset_bottom = 42.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("2_rc7yq")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_eg4wn")
+text = "VOLVER AL MENU PRINCIPAL"
+vertical_icon_alignment = 2
+script = ExtResource("2_fiq7m")
+
+[node name="SNAKE GUAU" type="Button" parent="." unique_id=959808571]
+offset_left = 131.0
+offset_top = 472.0
+offset_right = 379.0
+offset_bottom = 508.0
+theme_override_fonts/font = ExtResource("2_xtsuu")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_rc7yq")
+text = "SNAKE GUAU"
+vertical_icon_alignment = 2
+
+[node name="TETRIS GUAU" type="Button" parent="." unique_id=1605129936]
+offset_left = 635.0
+offset_top = 471.0
+offset_right = 883.0
+offset_bottom = 515.0
+theme_override_fonts/font = ExtResource("2_xtsuu")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_n1uga")
+text = "TETRIS GUAU"
+vertical_icon_alignment = 2
+
+[node name="PIG PONG GUAU" type="Button" parent="." unique_id=342640170]
+offset_left = 1177.0
+offset_top = 470.0
+offset_right = 1425.0
+offset_bottom = 514.0
+theme_override_fonts/font = ExtResource("2_xtsuu")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_wp3qs")
+text = "PIG PONG GUAU"
+vertical_icon_alignment = 2
+
+[node name="SPACE INAVDERS GUAU" type="Button" parent="." unique_id=1297707196]
+offset_left = 92.0
+offset_top = 955.0
+offset_right = 445.0
+offset_bottom = 1011.0
+theme_override_fonts/font = ExtResource("2_xtsuu")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_3bkfc")
+text = "SPACE INAVDERS GUAU"
+vertical_icon_alignment = 2
+
+[node name="BILLAR GUAU" type="Button" parent="." unique_id=610552162]
+offset_left = 1194.0
+offset_top = 950.0
+offset_right = 1408.0
+offset_bottom = 1006.0
+theme_override_fonts/font = ExtResource("2_xtsuu")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_hbq30")
+text = "BILLAR GUAU"
+vertical_icon_alignment = 2
+
+[node name="BUSCA MINES GUAU" type="Button" parent="." unique_id=1073378359]
+offset_left = 619.0
+offset_top = 951.0
+offset_right = 923.0
+offset_bottom = 1007.0
+theme_override_fonts/font = ExtResource("2_xtsuu")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_libui")
+text = "BUSCA MINES GUAU"
+vertical_icon_alignment = 2
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1383531519]
+anchors_preset = -1
+anchor_right = 0.155
+anchor_bottom = 0.16831683
+offset_right = -208.0
+offset_bottom = -130.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="VOLVER AL MENU PRINCIPAL" to="VOLVER AL MENU PRINCIPAL" method="_on_pressed"]

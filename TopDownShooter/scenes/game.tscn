@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://bvnqhecljptxo"]
+
+[ext_resource type="PackedScene" uid="uid://cwu3x5ciplkqh" path="res://scenes/player.tscn" id="1_wg05u"]
+[ext_resource type="Script" uid="uid://7pgxensf4ftc" path="res://scripts/game.gd" id="1_xrg4b"]
+
+[sub_resource type="Environment" id="Environment_amyqu"]
+background_mode = 3
+glow_enabled = true
+glow_blend_mode = 0
+glow_hdr_threshold = 0.77
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lonrp"]
+normal = Vector2(0, 1)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yc7s2"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_j7b27"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_iddry"]
+distance = -648.0
+
+[node name="Game" type="Node2D" unique_id=1894559757]
+script = ExtResource("1_xrg4b")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1206084614]
+environment = SubResource("Environment_amyqu")
+
+[node name="Player" parent="." unique_id=1377849349 instance=ExtResource("1_wg05u")]
+position = Vector2(563, 342)
+
+[node name="Walls" type="StaticBody2D" parent="." unique_id=1810012508]
+
+[node name="Top" type="CollisionShape2D" parent="Walls" unique_id=153240664]
+shape = SubResource("WorldBoundaryShape2D_lonrp")
+
+[node name="Left" type="CollisionShape2D" parent="Walls" unique_id=69705963]
+shape = SubResource("WorldBoundaryShape2D_yc7s2")
+
+[node name="Right" type="CollisionShape2D" parent="Walls" unique_id=1563986044]
+position = Vector2(1151, 1)
+shape = SubResource("WorldBoundaryShape2D_j7b27")
+
+[node name="Bottom" type="CollisionShape2D" parent="Walls" unique_id=670867898]
+shape = SubResource("WorldBoundaryShape2D_iddry")
+
+[node name="Timer" type="Timer" parent="." unique_id=69963219]
+wait_time = 0.5
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1897433126]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=1784380854]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderSmall"
+text = "PUNTUACION: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
