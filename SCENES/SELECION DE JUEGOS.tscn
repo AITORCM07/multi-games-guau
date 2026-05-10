@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://8riff1k43xor"]
 
 [ext_resource type="Script" uid="uid://quyeclpq1pxe" path="res://SCRIPTS BOTONES/selecion_de_juegos.gd" id="1_ph80v"]
-[ext_resource type="Texture2D" uid="uid://ble0blp2asci7" path="res://juegos.png" id="2_fiq7m"]
+[ext_resource type="Texture2D" uid="uid://ble0blp2asci7" path="res://FOTOS/juegos.png" id="2_fiq7m"]
 [ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="2_rc7yq"]
 [ext_resource type="FontFile" uid="uid://dxjmcldgtr0pv" path="res://LETRAS/kirifont/KiriFont.ttf" id="2_xtsuu"]
 [ext_resource type="FontFile" uid="uid://c7vj6sy2v5dbe" path="res://LETRAS/PressStart/PressStart2P-Regular.ttf" id="3_rc7yq"]
@@ -38,6 +38,9 @@ bg_color = Color(0.67058825, 0, 0.050980393, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mf2kd"]
 bg_color = Color(0, 0.12941177, 0.6, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wbqbu"]
+bg_color = Color(0.46847636, 0.3625295, 0.028234558, 1)
 
 [node name="Node" type="Node" unique_id=915825007]
 script = ExtResource("1_ph80v")
@@ -164,6 +167,15 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_mf2kd")
 text = " DODGE THE CREEPS GUAU"
 
+[node name="PUNTUACIONES" type="Button" parent="." unique_id=1771963931]
+offset_right = 289.0
+offset_bottom = 46.0
+theme_override_fonts/font = ExtResource("2_rc7yq")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_wbqbu")
+text = "PUNTUACIONES"
+vertical_icon_alignment = 2
+
 [node name="GridContainer" type="GridContainer" parent="." unique_id=1383531519]
 anchors_preset = -1
 anchor_right = 0.155
@@ -181,3 +193,4 @@ metadata/_edit_use_anchors_ = true
 [connection signal="pressed" from="BUSCA MINES GUAU" to="." method="_on_busca_mines_guau_pressed"]
 [connection signal="pressed" from="PLANE SHOOTER GUAU" to="." method="_on_plane_shooter_guau_pressed"]
 [connection signal="pressed" from="DODGE THE CREEPS GUAU" to="." method="_on_dodge_the_creeps_guau_pressed"]
+[connection signal="pressed" from="PUNTUACIONES" to="." method="_on_puntuaciones_pressed"]

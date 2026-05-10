@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 ScoreManager="*uid://b6uoev30kc8ej"
+GM="*uid://blgui04s18h6c"
+Puntuacion="*uid://cl2jlj7s4fxf2"
 
 [display]
 

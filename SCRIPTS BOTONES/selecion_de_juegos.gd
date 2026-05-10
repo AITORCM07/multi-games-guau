@@ -27,8 +27,13 @@ func _on_volver_al_menu_principal_pressed() -> void:
 
 
 func _on_plane_shooter_guau_pressed() -> void:
-	get_tree().change_scene_to_file("res://JUEGOS/PlaneShooter/Scenes/MainScene.tscn")
+	get_tree().root.content_scale_size = Vector2i(860, 1500)
+	get_tree().change_scene_to_file("res://PlaneShooter-master/Scenes/MainScene.tscn")
 
 
 func _on_dodge_the_creeps_guau_pressed() -> void:
-	get_tree().change_scene_to_file("res://JUEGOS/dodge_the_creeps/Main.tscn")
+	get_tree().change_scene_to_file("res://dodge_the_creeps/Main.tscn")
+
+
+func _on_puntuaciones_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/Puntuaciones.tscn")

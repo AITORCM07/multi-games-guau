@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhewdjmp244ar"
-path="res://.godot/imported/mutlijuegos.png-d7e296b44e6728f1ad9ee746429bc5db.ctex"
+uid="uid://yqglrrsx7j1f"
+path="res://.godot/imported/enemyFlyingAlt_1.png-0d8036a86051adb3e6ab79b6cff86868.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mutlijuegos.png"
-dest_files=["res://.godot/imported/mutlijuegos.png-d7e296b44e6728f1ad9ee746429bc5db.ctex"]
+source_file="res://dodge_the_creeps/art/enemyFlyingAlt_1.png"
+dest_files=["res://.godot/imported/enemyFlyingAlt_1.png-0d8036a86051adb3e6ab79b6cff86868.ctex"]
 
 [params]
 

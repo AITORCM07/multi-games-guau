@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c541yogshrivy"]
 
-[ext_resource type="Texture2D" uid="uid://dfx7hw6aah11o" path="res://multi-games.png" id="1_qnims"]
+[ext_resource type="Texture2D" uid="uid://dfx7hw6aah11o" path="res://FOTOS/multi-games.png" id="1_qnims"]
 [ext_resource type="Script" uid="uid://dotyjbrug8ao6" path="res://SCRIPTS BOTONES/JUEGOS.gd" id="2_vbyvk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeqcs"]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Level" format=3 uid="uid://d2udvg1ethnkh"]
+
+[ext_resource type="Script" uid="uid://cb152xhbqdif3" path="res://PlaneShooter-master/Scripts/Level.gd" id="1_rfvsm"]
+[ext_resource type="PackedScene" uid="uid://b3pi4n1sqdk03" path="res://PlaneShooter-master/Prefabs/Enemy_1.tscn" id="1_tdk2y"]
+[ext_resource type="PackedScene" uid="uid://balkehu8qf0ik" path="res://PlaneShooter-master/Prefabs/Enemy_2.tscn" id="2_v75lf"]
+
+[resource]
+script = ExtResource("1_rfvsm")
+enemy_spawn_time = 2.0
+enemy_count = 20
+enemy_prefabs = Array[PackedScene]([ExtResource("1_tdk2y"), ExtResource("2_v75lf")])

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://305as4gs5kq5"]
+
+[ext_resource type="Texture2D" uid="uid://bya7wv7rhegtw" path="res://FOTOS/puntod.png" id="1_h1qiv"]
+[ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="2_keama"]
+[ext_resource type="Script" uid="uid://bqbrl88w1ycx" path="res://SCENES/volver.gd" id="3_keama"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_keama"]
+bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
+
+[node name="Puntuaciones" type="Control" unique_id=779636827]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1699661732]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -18.975
+anchor_top = -12.45
+anchor_right = 66.875
+anchor_bottom = 39.425
+offset_left = 748.0
+offset_top = 492.0
+offset_right = -748.0
+offset_bottom = -492.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_h1qiv")
+metadata/_edit_use_anchors_ = true
+
+[node name="VOLVER" type="Button" parent="." unique_id=62445529]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1505.0
+offset_top = 3.0
+offset_right = 1877.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("2_keama")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_keama")
+text = "VOLVER AL MENU DE JUEGOS"
+vertical_icon_alignment = 2
+script = ExtResource("3_keama")
+
+[connection signal="pressed" from="VOLVER" to="VOLVER" method="_on_pressed"]

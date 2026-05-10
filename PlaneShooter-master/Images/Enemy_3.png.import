@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfx7hw6aah11o"
-path="res://.godot/imported/multi-games.png-aa5a35462de32b7d4c7ff695fbac8e09.ctex"
+uid="uid://bwiqv7e6kjhnu"
+path="res://.godot/imported/Enemy_3.png-72859337795cc5a4af1b776a4650d50f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://multi-games.png"
-dest_files=["res://.godot/imported/multi-games.png-aa5a35462de32b7d4c7ff695fbac8e09.ctex"]
+source_file="res://PlaneShooter-master/Images/Enemy_3.png"
+dest_files=["res://.godot/imported/Enemy_3.png-72859337795cc5a4af1b776a4650d50f.ctex"]
 
 [params]
 
