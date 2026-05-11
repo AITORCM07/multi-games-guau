@@ -1,11 +1,13 @@
 extends Node
-
 var score : int = 0
 var lives : int = 3
+var best_score : int = 0
 
-# Esta es la función que te faltaba y por eso daba error
 func add_kill():
-	score += 10 # Sumamos 10 puntos por cada enemigo muerto
+	score += 10
+	if score > best_score:
+		best_score = score
+		Puntuacion.save_score("space_invaders", best_score)
 
 func add_score(amount: int):
 	score += amount
@@ -13,7 +15,6 @@ func add_score(amount: int):
 func lose_life():
 	lives -= 1
 	if lives <= 0:
-		reset_game()
 		return true
 	return false
 

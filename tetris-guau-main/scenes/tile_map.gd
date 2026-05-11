@@ -1,76 +1,62 @@
 extends TileMap
-
 # --- Definición de Piezas ---
 var i_0 := [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1)]
 var i_90 := [Vector2i(2, 0), Vector2i(2, 1), Vector2i(2, 2), Vector2i(2, 3)]
 var i_180 := [Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2)]
 var i_270 := [Vector2i(1, 0), Vector2i(1, 1), Vector2i(1, 2), Vector2i(1, 3)]
 var i := [i_0, i_90, i_180, i_270]
-
 var t_0 := [Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1)]
 var t_90 := [Vector2i(1, 0), Vector2i(1, 1), Vector2i(2, 1), Vector2i(1, 2)]
 var t_180 := [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(1, 2)]
 var t_270 := [Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(1, 2)]
 var t := [t_0, t_90, t_180, t_270]
-
 var o_0 := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)]
 var o_90 := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)]
 var o_180 := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)]
 var o_270 := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)]
 var o := [o_0, o_90, o_180, o_270]
-
 var z_0 := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(1, 1), Vector2i(2, 1)]
 var z_90 := [Vector2i(2, 0), Vector2i(1, 1), Vector2i(2, 1), Vector2i(1, 2)]
 var z_180 := [Vector2i(0, 1), Vector2i(1, 1), Vector2i(1, 2), Vector2i(2, 2)]
 var z_270 := [Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(0, 2)]
 var z := [z_0, z_90, z_180, z_270]
-
 var s_0 := [Vector2i(1, 0), Vector2i(2, 0), Vector2i(0, 1), Vector2i(1, 1)]
 var s_90 := [Vector2i(1, 0), Vector2i(1, 1), Vector2i(2, 1), Vector2i(2, 2)]
 var s_180 := [Vector2i(1, 1), Vector2i(2, 1), Vector2i(0, 2), Vector2i(1, 2)]
 var s_270 := [Vector2i(0, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(1, 2)]
 var s := [s_0, s_90, s_180, s_270]
-
 var l_0 := [Vector2i(2, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1)]
 var l_90 := [Vector2i(1, 0), Vector2i(1, 1), Vector2i(1, 2), Vector2i(2, 2)]
 var l_180 := [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(0, 2)]
 var l_270 := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(1, 1), Vector2i(1, 2)]
 var l := [l_0, l_90, l_180, l_270]
-
 var j_0 := [Vector2i(0, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1)]
 var j_90 := [Vector2i(1, 0), Vector2i(2, 0), Vector2i(1, 1), Vector2i(1, 2)]
 var j_180 := [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(2, 2)]
 var j_270 := [Vector2i(1, 0), Vector2i(1, 1), Vector2i(0, 2), Vector2i(1, 2)]
 var j := [j_0, j_90, j_180, j_270]
-
 var shapes := [i, t, o, z, s, l, j]
 var shapes_full := shapes.duplicate()
-
 # --- Configuración del Tablero ---
 const COLS : int = 10
 const ROWS : int = 20
 const start_pos := Vector2i(5, 1)
-
 # --- Variables de Juego ---
 var cur_pos : Vector2i
 var speed : float
 var fall_steps : float = 0.0
 const steps_req : int = 50
 const ACCEL : float = 0.25
-
 var piece_type
 var next_piece_type
 var rotation_index : int = 0
 var active_piece : Array
-
 var score : int
 const REWARD : int = 100
 var game_running : bool
-
 var tile_id : int = 0
 var piece_atlas : Vector2i
 var next_piece_atlas : Vector2i
-
 var board_layer : int = 0
 var active_layer : int = 1
 
@@ -84,19 +70,16 @@ func setup_controls():
 		var w_key = InputEventKey.new()
 		w_key.keycode = KEY_W
 		InputMap.action_add_event("ui_rotate", w_key)
-	
 	if not InputMap.has_action("move_left_custom"):
 		InputMap.add_action("move_left_custom")
 		var a_key = InputEventKey.new()
 		a_key.keycode = KEY_A
 		InputMap.action_add_event("move_left_custom", a_key)
-	
 	if not InputMap.has_action("move_right_custom"):
 		InputMap.add_action("move_right_custom")
 		var d_key = InputEventKey.new()
 		d_key.keycode = KEY_D
 		InputMap.action_add_event("move_right_custom", d_key)
-	
 	if not InputMap.has_action("move_down_custom"):
 		InputMap.add_action("move_down_custom")
 		var s_key = InputEventKey.new()
@@ -122,24 +105,16 @@ func new_game():
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		new_game()
-	
 	if game_running:
-		# MOVIMIENTO LATERAL CORREGIDO
-		if Input.is_action_just_pressed("move_left_custom"): # Tecla A
+		if Input.is_action_just_pressed("move_left_custom"):
 			move_piece(Vector2i.LEFT)
-		elif Input.is_action_just_pressed("move_right_custom"): # Tecla D
+		elif Input.is_action_just_pressed("move_right_custom"):
 			move_piece(Vector2i.RIGHT)
-			
-		# ROTACIÓN
 		if Input.is_action_just_pressed("ui_rotate") or Input.is_action_just_pressed("ui_up"):
 			rotate_piece()
-		
-		# CAÍDA (Gravedad + Tecla S)
 		if Input.is_action_pressed("move_down_custom") or Input.is_action_pressed("ui_down"):
-			fall_steps += 10 
-		
+			fall_steps += 10
 		fall_steps += speed
-		
 		if fall_steps >= steps_req:
 			move_piece(Vector2i.DOWN)
 			fall_steps = 0
@@ -250,5 +225,6 @@ func clear_board():
 func check_game_over():
 	for i in active_piece:
 		if not is_free(i + cur_pos):
+			Puntuacion.save_score("tetris", score)
 			$HUD.get_node("GameOverLabel").show()
 			game_running = false

@@ -1,23 +1,16 @@
 extends Node
-
 @export var snake_scene : PackedScene
-
 var score : int
 var game_started : bool = false
-
 var cells_x : int = 20
 var cells_y : int = 20
 var cell_size : int = 50
-
 var grid_offset : Vector2
-
 var food_pos : Vector2
 var regen_food : bool = true
-
 var old_data : Array
 var snake_data : Array
 var snake : Array
-
 var start_pos = Vector2(9, 9)
 var up = Vector2(0, -1)
 var down = Vector2(0, 1)
@@ -163,6 +156,7 @@ func move_food():
 		$Food.position = grid_offset + (food_pos * cell_size)
 
 func end_game():
+	Puntuacion.save_score("snake", score)
 	$GameOverMenu.show()
 	$MoveTimer.stop()
 	game_started = false

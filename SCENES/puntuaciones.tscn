@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://305as4gs5kq5"]
 
 [ext_resource type="Texture2D" uid="uid://bya7wv7rhegtw" path="res://FOTOS/puntod.png" id="1_h1qiv"]
+[ext_resource type="Script" uid="uid://carr38ssrsb3p" path="res://SCENES/puntuaciones.gd" id="1_s8rnb"]
 [ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="2_keama"]
 [ext_resource type="Script" uid="uid://bqbrl88w1ycx" path="res://SCENES/volver.gd" id="3_keama"]
+[ext_resource type="FontFile" path="res://LETRAS/kirifont/Kirifont.tres" id="5_q0p75"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_keama"]
 bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
@@ -12,6 +14,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_s8rnb")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1699661732]
 layout_mode = 1
@@ -45,5 +48,65 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_keama")
 text = "VOLVER AL MENU DE JUEGOS"
 vertical_icon_alignment = 2
 script = ExtResource("3_keama")
+
+[node name="SNAKE GUAU" type="Label" parent="." unique_id=482346661]
+layout_mode = 0
+offset_left = 273.0
+offset_top = 437.0
+offset_right = 497.0
+offset_bottom = 492.0
+theme_override_fonts/font = ExtResource("5_q0p75")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="TETRIS GUAU" type="Label" parent="." unique_id=1147291918]
+layout_mode = 0
+offset_left = 847.0
+offset_top = 441.0
+offset_right = 1092.0
+offset_bottom = 496.0
+theme_override_fonts/font = ExtResource("5_q0p75")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="PLANE SHOOTER GUAU" type="Label" parent="." unique_id=1986684677]
+layout_mode = 0
+offset_left = 1429.0
+offset_top = 439.0
+offset_right = 1667.0
+offset_bottom = 495.0
+theme_override_fonts/font = ExtResource("5_q0p75")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="BILLAR GUAU" type="Label" parent="." unique_id=218966877]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 884.0
+offset_right = 507.0
+offset_bottom = 939.0
+theme_override_fonts/font = ExtResource("5_q0p75")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="DOGDE THE CREEPS GUAU" type="Label" parent="." unique_id=1315000990]
+layout_mode = 0
+offset_left = 866.0
+offset_top = 883.0
+offset_right = 1076.0
+offset_bottom = 938.0
+theme_override_fonts/font = ExtResource("5_q0p75")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="SPACE INVADERS GUAU" type="Label" parent="." unique_id=855853580]
+layout_mode = 0
+offset_left = 1435.0
+offset_top = 888.0
+offset_right = 1668.0
+offset_bottom = 947.0
+theme_override_fonts/font = ExtResource("5_q0p75")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
 
 [connection signal="pressed" from="VOLVER" to="VOLVER" method="_on_pressed"]

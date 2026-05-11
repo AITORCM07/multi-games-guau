@@ -12,7 +12,6 @@ var last_enemy_spawned = false
 func _ready() -> void:
 	coin_count_label.text = "MONEDAS:" + str(count)
 	player_health.value = 1
-	
 	if !GM.game_started:
 		start_screen.show()
 		get_tree().paused = true
@@ -28,10 +27,12 @@ func set_player_health(value:float) -> void:
 	player_health.value = value
 
 func game_over() -> void:
+	Puntuacion.save_score("plane_shooter", count)
 	get_tree().paused = true
 	game_over_screen.show()
 
 func game_complete() -> void:
+	Puntuacion.save_score("plane_shooter", count)
 	get_tree().paused = true
 	gc_coin_count_label.text = coin_count_label.text
 	game_complete_screen.show()
