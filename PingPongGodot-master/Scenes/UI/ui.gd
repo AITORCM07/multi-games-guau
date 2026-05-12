@@ -1,5 +1,5 @@
 extends CanvasLayer
-class_name UI
+class_name UIPingPong
 @onready var player_points_label = $MarginContainer/PlayerPoints
 @onready var enemy_points_label = $MarginContainer/EnemyPoints
 

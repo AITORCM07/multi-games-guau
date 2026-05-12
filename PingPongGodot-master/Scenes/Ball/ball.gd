@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name Ball
+class_name BallPingPong
 @export var INITIAL_BALL_SPEED = 900
 @onready var audio_stream_player = $AudioStreamPlayer
 @export var speed_multiplier = 1.1

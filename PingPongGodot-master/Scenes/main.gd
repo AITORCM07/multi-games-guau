@@ -2,10 +2,10 @@ extends Node2D
 var player_points = 0
 var enemy_points = 0
 var game_over = false
-@onready var enemy_paddle = $EnemyPaddle
-@onready var player_paddle = $Paddle
-@onready var ball = $Ball
-@onready var UI = $UI
+@onready var enemy_paddle = $EnemyPaddlePingPong
+@onready var player_paddle = $PaddlePingPong
+@onready var ball = $BallPingPong
+@onready var UI = $UIPingPong
 
 func _process(_delta):
 	if Input.is_key_pressed(KEY_ESCAPE):
