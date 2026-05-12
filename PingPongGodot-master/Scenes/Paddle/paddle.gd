@@ -1,14 +1,12 @@
 extends RigidBody2D
-
 class_name Paddle
-
 @export var speed = 500
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var movement = Vector2.ZERO
-	if Input.is_action_pressed("move_up"):
+	if Input.is_key_pressed(KEY_W):
 		movement = Vector2.UP
-	elif Input.is_action_pressed("move_down"):
+	elif Input.is_key_pressed(KEY_S):
 		movement = Vector2.DOWN
 	
-	linear_velocity = movement * speed;
+	linear_velocity = movement * speed

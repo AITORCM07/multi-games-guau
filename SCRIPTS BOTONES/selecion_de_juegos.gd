@@ -17,7 +17,7 @@ func _on_busca_mines_guau_pressed():
 	get_tree().change_scene_to_file("res://Busca-minas-guau-main/scenes/main.tscn")
 
 func _on_pig_pong_guau_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://PingPongGodot-master/Scenes/main.tscn")
 
 func _on_space_inavders_guau_pressed() -> void:
 	get_tree().change_scene_to_file("res://TopDownShooter/scenes/game.tscn")

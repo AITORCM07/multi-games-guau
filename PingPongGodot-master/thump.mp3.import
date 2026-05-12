@@ -2,13 +2,13 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://cgcfry1avd7bs"
-path="res://.godot/imported/thump.mp3-b15223b2fa25a1ebfccff168d2a9a364.mp3str"
+uid="uid://dwdo6a1qttu8o"
+path="res://.godot/imported/thump.mp3-c50a138d6a1a38f888302bffc260fedb.mp3str"
 
 [deps]
 
-source_file="res://thump.mp3"
-dest_files=["res://.godot/imported/thump.mp3-b15223b2fa25a1ebfccff168d2a9a364.mp3str"]
+source_file="res://PingPongGodot-master/thump.mp3"
+dest_files=["res://.godot/imported/thump.mp3-c50a138d6a1a38f888302bffc260fedb.mp3str"]
 
 [params]
 

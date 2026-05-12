@@ -1,17 +1,10 @@
 extends RigidBody2D
-const SPEED = 30000
+const SPEED = 800
 
-@onready var ball 
-
-
-func _ready():
-	# find the ball in the scene
-	ball = get_tree().get_first_node_in_group("ball")
-
-func _physics_process(delta):
-	# calculate the direction towards the ball
-	var direction = (ball.position - position).normalized()
-	
-	# move the paddle towards the ball
-	linear_velocity.y = direction.y * SPEED * delta
-	
+func _physics_process(_delta):
+	var direction = 0
+	if Input.is_key_pressed(KEY_UP):
+		direction = -1
+	elif Input.is_key_pressed(KEY_DOWN):
+		direction = 1
+	linear_velocity.y = direction * SPEED

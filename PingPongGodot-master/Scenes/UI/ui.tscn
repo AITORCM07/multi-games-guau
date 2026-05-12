@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://csn4ssq1ll01r"]
+[gd_scene format=3 uid="uid://csn4ssq1ll01r"]
 
-[ext_resource type="Script" path="res://Scenes/UI/ui.gd" id="1_273ws"]
+[ext_resource type="Script" uid="uid://b5rbtaxvidc3p" path="res://PingPongGodot-master/Scenes/UI/ui.gd" id="1_273ws"]
 
-[node name="CanvasGroup" type="CanvasLayer"]
+[node name="CanvasGroup" type="CanvasLayer" unique_id=2069370368]
 script = ExtResource("1_273ws")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=50618890]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -16,16 +16,18 @@ grow_vertical = 2
 theme_override_constants/margin_left = 32
 theme_override_constants/margin_right = 32
 
-[node name="PlayerPoints" type="Label" parent="MarginContainer"]
+[node name="PlayerPoints" type="Label" parent="MarginContainer" unique_id=1745240134]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
 text = "1"
 
-[node name="EnemyPoints" type="Label" parent="MarginContainer"]
+[node name="EnemyPoints" type="Label" parent="MarginContainer" unique_id=311214944]
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 1, 1)
 theme_override_font_sizes/font_size = 64
 text = "2"
