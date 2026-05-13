@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://vvttoin4ngxq"]
 
-[ext_resource type="Script" uid="uid://bv171fcabd7vl" path="res://PingPongGodot-master/end_detection_area.gd" id="1_yjh1a"]
+[ext_resource type="Script" uid="uid://1jsvu7uvfrif" path="res://PingPongGodot-master/end_detection_area.gd" id="1_yjh1a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k8mst"]
 

@@ -10,7 +10,7 @@ func _on_tetris_guau_pressed():
 
 func _on_billar_guau_pressed():
 	get_tree().root.content_scale_size = Vector2i(1200, 775)
-	get_tree().change_scene_to_file("res://Billar-guau-main/scenes/main.tscn")
+	get_tree().change_scene_to_file("res://Pool_tut-main/scenes/main.tscn")
 
 func _on_busca_mines_guau_pressed():
 	get_tree().root.content_scale_size = Vector2i(750, 750)

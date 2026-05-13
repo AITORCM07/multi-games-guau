@@ -1,6 +1,6 @@
 extends RigidBody2D
-class_name PaddlePingPong
-@export var speed = 500
+class_name Paddle
+@export var speed = 800
 
 func _physics_process(_delta):
 	var movement = Vector2.ZERO

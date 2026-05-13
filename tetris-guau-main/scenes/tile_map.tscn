@@ -24,6 +24,9 @@ sources/0 = SubResource("TileSetAtlasSource_a08xs")
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3flbw"]
 bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3qac"]
+bg_color = Color(0.45307833, 1.9974261e-06, 0.2854778, 1)
+
 [node name="TileMap" type="TileMap" unique_id=1223374612]
 tile_set = SubResource("TileSet_l1uyk")
 rendering_quadrant_size = 32
@@ -44,5 +47,19 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_3flbw")
 text = "VOLVER ATRAS"
 script = ExtResource("4_l3qac")
+
+[node name="TECLAS" type="Label" parent="." unique_id=696812241]
+offset_left = 411.0
+offset_top = 482.0
+offset_right = 788.0
+offset_bottom = 644.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_l3qac")
+text = " TECLAS:
+ W | 🡹 = Girar la pieza de lado 
+ A | 🡸 = Mover la pieza a la izquierda 
+ D | 🡺 = Mover la pieza a la derecha 
+ S | 🡻 = Bajar la pieza "
+vertical_alignment = 2
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

@@ -1,85 +1,115 @@
 [gd_scene format=3 uid="uid://das2o8dsafvw3"]
 
-[ext_resource type="Script" path="res://PingPongGodot-master/Scenes/main.gd" id="1_jfu1m"]
+[ext_resource type="Script" uid="uid://cbt32kjcirt66" path="res://PingPongGodot-master/Scenes/main.gd" id="1_jfu1m"]
 [ext_resource type="PackedScene" uid="uid://e6kupyu3uco4" path="res://PingPongGodot-master/Scenes/Paddle/paddle.tscn" id="1_jj3h5"]
 [ext_resource type="PackedScene" uid="uid://xsm2nf3lgo0n" path="res://PingPongGodot-master/Scenes/wall.tscn" id="2_5t3lj"]
 [ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="2_muj0i"]
-[ext_resource type="Script" path="res://PingPongGodot-master/Scenes/Paddle/enemy_paddle.gd" id="2_orbiw"]
-[ext_resource type="Script" path="res://PingPongGodot-master/Scenes/volver.gd" id="3_t0t7l"]
+[ext_resource type="Script" uid="uid://bvbg71lpxy441" path="res://PingPongGodot-master/Scenes/Paddle/enemy_paddle.gd" id="2_orbiw"]
 [ext_resource type="PackedScene" uid="uid://bw5krfpua7k72" path="res://PingPongGodot-master/Scenes/Ball/ball.tscn" id="3_w2p8l"]
-[ext_resource type="Texture2D" path="res://PingPongGodot-master/PingPongDottedLine.png" id="5_5272g"]
+[ext_resource type="Texture2D" uid="uid://dndlp7reell4" path="res://PingPongGodot-master/PingPongDottedLine.png" id="5_5272g"]
 [ext_resource type="PackedScene" uid="uid://vvttoin4ngxq" path="res://PingPongGodot-master/end_detection_area.tscn" id="6_eta8n"]
 [ext_resource type="PackedScene" uid="uid://csn4ssq1ll01r" path="res://PingPongGodot-master/Scenes/UI/ui.tscn" id="8_v8jww"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_muj0i"]
-bg_color = Color(0.41115695, 8.759796e-06, 0.2997656, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lufg"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36pq2"]
 bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
 
-[node name="main" type="Node2D" unique_id=1331526203]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_muj0i"]
+bg_color = Color(0.55818236, 1.280278e-05, 0.40238014, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t0t7l"]
+bg_color = Color(0.09019608, 0, 0.7411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lufg"]
+bg_color = Color(1, 0.07450981, 0, 1)
+
+[node name="main" type="Node2D" unique_id=1154445004]
 script = ExtResource("1_jfu1m")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1418253080]
-offset_left = -2508.0
-offset_top = -1388.0
-offset_right = 2475.0
-offset_bottom = 1393.0
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2021049369]
+offset_left = -2548.0
+offset_top = -1479.0
+offset_right = 2670.0
+offset_bottom = 1459.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="." unique_id=1861576045]
-offset_left = -181.0
-offset_top = -1214.0
-offset_right = 189.0
-offset_bottom = -1137.0
-theme_override_font_sizes/font_size = 45
-theme_override_styles/normal = SubResource("StyleBoxFlat_muj0i")
-text = "ESC PARA SALIR"
-horizontal_alignment = 1
-
-[node name="VOLVER" type="Button" parent="." unique_id=1502821168]
-process_mode = 3
-offset_left = -417.0
-offset_top = -1325.0
-offset_right = 403.0
-offset_bottom = -1215.0
+[node name="VOLVER AL MENU --> ESC" type="Label" parent="." unique_id=2048702556]
+offset_left = -453.0
+offset_top = -1344.0
+offset_right = 476.0
+offset_bottom = -1272.0
 theme_override_fonts/font = ExtResource("2_muj0i")
 theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_1lufg")
-text = "VOLVER AL MENU DE JUEGOS"
-icon_alignment = 1
-script = ExtResource("3_t0t7l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_36pq2")
+text = "VOLVER AL MENU DE JUEGOS --> ESC"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Paddle" parent="." unique_id=972741302 instance=ExtResource("1_jj3h5")]
-modulate = Color(1, 0, 0, 1)
+[node name="MUTLIJUGADOR" type="Label" parent="." unique_id=1225275183]
+offset_left = -192.0
+offset_top = -1275.0
+offset_right = 200.0
+offset_bottom = -1228.0
+theme_override_fonts/font = ExtResource("2_muj0i")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_muj0i")
+text = "MUTLIJUGADOR"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TECLAS JUGADOR 1" type="Label" parent="." unique_id=1024521674]
+offset_left = -2092.0
+offset_top = -1050.0
+offset_right = -1645.0
+offset_bottom = -937.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0t7l")
+text = "TECLAS JUGADOR 1:
+W | S"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TECLAS JUGADOR 2" type="Label" parent="." unique_id=2013649024]
+offset_left = 1622.0
+offset_top = -1040.0
+offset_right = 2050.0
+offset_bottom = -926.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_1lufg")
+text = "TECLAS JUGADOR 2:
+🢁 | 🢃"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Paddle" parent="." unique_id=1603790887 instance=ExtResource("1_jj3h5")]
+modulate = Color(0, 0, 1, 1)
 position = Vector2(-1000, 2.08165e-12)
 gravity_scale = 2.66454e-15
 
-[node name="EnemyPaddle" parent="." unique_id=73273706 instance=ExtResource("1_jj3h5")]
-modulate = Color(0, 0, 1, 1)
+[node name="EnemyPaddle" parent="." unique_id=1408776168 instance=ExtResource("1_jj3h5")]
+modulate = Color(18.892157, 0, 0, 1)
 position = Vector2(1000, 0)
 gravity_scale = 2.66454e-15
 script = ExtResource("2_orbiw")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2060237134]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1521754990]
 position = Vector2(2.08165e-12, 2.08165e-12)
 zoom = Vector2(0.4, 0.4)
 
-[node name="Walls" type="Node" parent="." unique_id=1152268617]
+[node name="Walls" type="Node" parent="." unique_id=1626045733]
 
-[node name="TopWall" parent="Walls" unique_id=1795199925 instance=ExtResource("2_5t3lj")]
+[node name="TopWall" parent="Walls" unique_id=1425142408 instance=ExtResource("2_5t3lj")]
 position = Vector2(10, -600)
 rotation = 1.5708
 scale = Vector2(1, 9)
 
-[node name="BottomWall" parent="Walls" unique_id=648070840 instance=ExtResource("2_5t3lj")]
+[node name="BottomWall" parent="Walls" unique_id=1893903760 instance=ExtResource("2_5t3lj")]
 position = Vector2(10, 600)
 rotation = 1.5708
 scale = Vector2(1, 9)
 
-[node name="BallPingPong" parent="." unique_id=1299993127 groups=["ball"] instance=ExtResource("3_w2p8l")]
+[node name="Ball" parent="." unique_id=533399294 groups=["ball"] instance=ExtResource("3_w2p8l")]
 
-[node name="Line2D" type="Line2D" parent="." unique_id=52655547]
+[node name="Line2D" type="Line2D" parent="." unique_id=530301474]
 texture_repeat = 2
 position = Vector2(-1, -614)
 points = PackedVector2Array(0, 0, 0, 1200)
@@ -87,14 +117,13 @@ width = 32.0
 texture = ExtResource("5_5272g")
 texture_mode = 1
 
-[node name="LeftEdge" parent="." unique_id=96278098 instance=ExtResource("6_eta8n")]
+[node name="LeftEdge" parent="." unique_id=1411548398 instance=ExtResource("6_eta8n")]
 position = Vector2(-1142, 0)
 
-[node name="RightEdge" parent="." unique_id=913998391 instance=ExtResource("6_eta8n")]
+[node name="RightEdge" parent="." unique_id=172575075 instance=ExtResource("6_eta8n")]
 position = Vector2(1143, 45)
 
-[node name="UIPingPong" parent="." unique_id=1840503205 instance=ExtResource("8_v8jww")]
+[node name="UI" parent="." unique_id=1739052430 instance=ExtResource("8_v8jww")]
 
-[connection signal="pressed" from="VOLVER" to="VOLVER" method="_on_pressed"]
 [connection signal="point_scored" from="LeftEdge" to="." method="enemy_scored"]
 [connection signal="point_scored" from="RightEdge" to="." method="player_scored"]

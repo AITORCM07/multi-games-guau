@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bw5krfpua7k72"]
 
-[ext_resource type="Script" uid="uid://dyt3hg54yd701" path="res://PingPongGodot-master/Scenes/Ball/ball.gd" id="1_bc4dl"]
+[ext_resource type="Script" uid="uid://coc82oluk2xtl" path="res://PingPongGodot-master/Scenes/Ball/ball.gd" id="1_bc4dl"]
 [ext_resource type="Texture2D" uid="uid://bgj4buv5coaou" path="res://PingPongGodot-master/Scenes/Ball/ball.png" id="1_n5rl1"]
 [ext_resource type="AudioStream" uid="uid://dwdo6a1qttu8o" path="res://PingPongGodot-master/thump.mp3" id="3_tvhal"]
 

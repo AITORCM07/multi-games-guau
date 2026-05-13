@@ -1467,6 +1467,9 @@ corner_radius_bottom_left = 10
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7jkg"]
 bg_color = Color(0.38431373, 0.21960784, 0.7058824, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ffe6w"]
+bg_color = Color(0.5684181, 0.39258972, 0, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxif5"]
 bg_color = Color(0.52156866, 0, 0.2901961, 1)
 
@@ -1573,7 +1576,6 @@ autoplay = &"wave"
 
 [node name="StartScreen" type="Panel" parent="." unique_id=1329202945]
 process_mode = 3
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1616,10 +1618,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -197.0
-offset_top = 22.0
-offset_right = 197.0
-offset_bottom = 112.0
+offset_left = -206.0
+offset_top = -18.0
+offset_right = 188.0
+offset_bottom = 72.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(197, 45)
@@ -1638,10 +1640,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -197.0
-offset_top = 142.0
-offset_right = 197.0
-offset_bottom = 232.0
+offset_left = -209.0
+offset_top = 94.0
+offset_right = 185.0
+offset_bottom = 184.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(197, 45)
@@ -1652,6 +1654,17 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_d7jkg")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0na1d")
 text = "VOLVER"
+
+[node name="TECLAS" type="Label" parent="StartScreen" unique_id=207255245]
+layout_mode = 0
+offset_left = 712.0
+offset_top = 752.0
+offset_right = 1197.0
+offset_bottom = 818.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_ffe6w")
+text = " Consejo: 💡
+ Se mueve con el raton y se dispara con el espacio "
 
 [node name="GameOver" type="Panel" parent="." unique_id=1135765339]
 process_mode = 3
