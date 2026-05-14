@@ -36,4 +36,4 @@ func _on_dodge_the_creeps_guau_pressed() -> void:
 
 
 func _on_puntuaciones_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Puntuaciones.tscn")
+	get_tree().change_scene_to_file("res://SCENES/puntuaciones.tscn")

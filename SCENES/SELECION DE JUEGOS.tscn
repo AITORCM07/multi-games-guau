@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://ble0blp2asci7" path="res://FOTOS/juegos.png" id="2_fiq7m"]
 [ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="2_rc7yq"]
 [ext_resource type="FontFile" uid="uid://dxjmcldgtr0pv" path="res://LETRAS/kirifont/KiriFont.ttf" id="2_xtsuu"]
-[ext_resource type="FontFile" uid="uid://c7vj6sy2v5dbe" path="res://LETRAS/PressStart/PressStart2P-Regular.ttf" id="3_rc7yq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oi8nf"]
 bg_color = Color(0.44313726, 0, 1, 1)
@@ -59,11 +58,11 @@ anchor_right = 1.0
 offset_bottom = 45.0
 grow_horizontal = 2
 size_flags_vertical = 0
-theme_override_fonts/font = ExtResource("3_rc7yq")
+theme_override_fonts/font = ExtResource("2_xtsuu")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_oi8nf")
 theme_override_styles/focus = SubResource("StyleBoxFlat_xtdxn")
-text = "👾SELECCIÓN  DE JUEGOS🕹️"
+text = "(; SELECCIÓN  DE JUEGOS ;)"
 horizontal_alignment = 1
 vertical_alignment = 1
 

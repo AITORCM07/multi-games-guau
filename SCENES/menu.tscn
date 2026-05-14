@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c541yogshrivy"]
 
 [ext_resource type="Texture2D" uid="uid://dfx7hw6aah11o" path="res://FOTOS/multi-games.png" id="1_qnims"]
+[ext_resource type="FontFile" uid="uid://dxjmcldgtr0pv" path="res://LETRAS/kirifont/KiriFont.ttf" id="2_mawtk"]
 [ext_resource type="Script" uid="uid://dotyjbrug8ao6" path="res://SCRIPTS BOTONES/JUEGOS.gd" id="2_vbyvk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yeqcs"]
@@ -28,9 +29,10 @@ grow_vertical = 0
 
 [node name="🌌JUEGOS🚀" type="Button" parent="VBoxContainer" unique_id=458021462]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mawtk")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_yeqcs")
-text = "🌌JUEGOS🚀"
+text = "(: JUEGOS :)"
 vertical_icon_alignment = 2
 script = ExtResource("2_vbyvk")
 

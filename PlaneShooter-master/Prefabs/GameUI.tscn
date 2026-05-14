@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://xcyrkx1ev08b" path="res://PlaneShooter-master/Scripts/GameUI.gd" id="1_atrwe"]
 [ext_resource type="Texture2D" uid="uid://511scju6paq8" path="res://PlaneShooter-master/Images/Coin.png" id="2_qttby"]
 [ext_resource type="FontFile" uid="uid://gghkghq5y3vg" path="res://PlaneShooter-master/Fonts/NiceSugar.otf" id="3_32igp"]
+[ext_resource type="FontFile" uid="uid://df4ak8s8ki2dn" path="res://LETRAS/kirifont/KiriFont.otf" id="4_d7jkg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0m1kk"]
 bg_color = Color(0.882353, 0.882353, 0.882353, 1)
@@ -1576,6 +1577,7 @@ autoplay = &"wave"
 
 [node name="StartScreen" type="Panel" parent="." unique_id=1329202945]
 process_mode = 3
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1657,14 +1659,16 @@ text = "VOLVER"
 
 [node name="TECLAS" type="Label" parent="StartScreen" unique_id=207255245]
 layout_mode = 0
-offset_left = 712.0
-offset_top = 752.0
-offset_right = 1197.0
-offset_bottom = 818.0
+offset_left = 102.0
+offset_top = 979.0
+offset_right = 797.0
+offset_bottom = 1041.0
+theme_override_fonts/font = ExtResource("4_d7jkg")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_ffe6w")
-text = " Consejo: 💡
+text = " Consejo: 
  Se mueve con el raton y se dispara con el espacio "
+vertical_alignment = 2
 
 [node name="GameOver" type="Panel" parent="." unique_id=1135765339]
 process_mode = 3
