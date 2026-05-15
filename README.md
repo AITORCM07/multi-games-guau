@@ -27,7 +27,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ---
 
-***Cómo se ha hecho
+***Cómo se ha hecho:***
 
 - **Motor:** Godot Engine 4.6
 - **Lenguaje:** GDScript
