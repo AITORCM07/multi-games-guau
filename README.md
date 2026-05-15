@@ -84,6 +84,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 ---
 
 ## ***Sistema de puntuaciones***
+![PUNTUACIONES](PUNTUACIONES.webp)
 
 Cada juego guarda su mejor puntuación:
 - 🐍 Snake — manzanas comidas
