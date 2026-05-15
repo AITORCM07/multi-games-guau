@@ -4,11 +4,13 @@ Un proyecto de videojuegos desarrollado en **Godot Engine 4.6** que reúne 8 jue
 
 **[Jugar aquí](https://aitorcm07.github.io/Pagina-Web-MULTI-GAMES-GUAU/)**
 
+![MENU PRINCIPAL](FOTON4.png)
 ---
 
 ## **Descripción:**
 
 MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde cero usando Godot Engine y GDScript. El proyecto incluye un sistema de puntuaciones compartido entre todos los juegos y una pantalla de selección de juegos central.
+![SELECION DE JUEGOS](MENU.webp)
 
 ---
 
@@ -38,36 +40,46 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ## **🎮 Controles 🎮**
 
-***Snake***
+## ***Snake***
 - **Flechas** o **WASD** — mover la serpiente
+![SNAKE GUAU](FOTON4.png)
 
-***Tetris***
+## ***Tetris***
 - **A/D** — mover pieza izquierda/derecha
 - **S** — bajar pieza más rápido
 - **W** — rotar pieza
+![TETRIS GUAU](FOTON4.png)
 
-***Billar***
+## ***Billar***
 - **Ratón** — apuntar
 - **Click izquierdo** — cargar y disparar
+- **ESC** — volver al menú
+![BILLAR GUAU](FOTON4.png)
 
-***Ping Pong***
+## ***Ping Pong***
 - **Jugador 1 (rojo):** W/S
 - **Jugador 2 (azul):** ↑/↓
 - **ESC** — volver al menú
+![PING PONG GUAU](FOTON4.png)
 
-***Space Invaders***
+## ***Space Invaders***
 - **WASD** — mover
 - **Click izquierdo** — disparar
+![SPACE INVADERS GUAU](FOTON4.png)
 
-***Plane Shooter***
-- **Flechas** — mover nave
+## ***Plane Shooter***
+- **RATON** — Presionando la nave para poder moverla
+- **ESPACIO** — Pulsar para disparar
+![PLANE SHOOTER GUAU](FOTON4.png)
 
-### Dodge the Creeps
+### ***Dodge the Creeps****
 - **Flechas** o **WASD** — mover personaje
+![DOGDE THE CREEPS GUAU](FOTON4.png)
 
-### Busca Minas
+### ****Busca Minas****
 - **Click izquierdo** — descubrir casilla
 - **Click derecho** — poner bandera
+![BUSCA MINAS GUAU](FOTON4.png)
 
 ---
 
