@@ -29,14 +29,14 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ## ***Cómo se ha hecho:***
 
-- **Motor:** Godot Engine 4.6
-- **Lenguaje:** GDScript
-- **Sistema de puntuaciones:** Autoload global (`Puntuacion.gd`) que guarda las mejores puntuaciones de cada juego
-- **Exportación:** HTML5 para jugar en el navegador
+- ***Motor:*** Godot Engine 4.6
+- ***Lenguaje:*** GDScript
+- ***Sistema de puntuaciones:*** Autoload global (`Puntuacion.gd`) que guarda las mejores puntuaciones de cada juego
+- ***Exportación:*** HTML5 para jugar en el navegador
 
 ---
 
-## 🎮 Controles
+## **🎮 Controles 🎮**
 
 ***Snake***
 - **Flechas** o **WASD** — mover la serpiente
