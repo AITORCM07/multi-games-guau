@@ -27,7 +27,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ---
 
-***Cómo se ha hecho:***
+## ***Cómo se ha hecho:***
 
 - **Motor:** Godot Engine 4.6
 - **Lenguaje:** GDScript
@@ -38,28 +38,28 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ## 🎮 Controles
 
-### Snake
+***Snake***
 - **Flechas** o **WASD** — mover la serpiente
 
-### Tetris
+***Tetris***
 - **A/D** — mover pieza izquierda/derecha
 - **S** — bajar pieza más rápido
 - **W** — rotar pieza
 
-### Billar
+***Billar***
 - **Ratón** — apuntar
 - **Click izquierdo** — cargar y disparar
 
-### Ping Pong
+***Ping Pong***
 - **Jugador 1 (rojo):** W/S
 - **Jugador 2 (azul):** ↑/↓
 - **ESC** — volver al menú
 
-### Space Invaders
+***Space Invaders***
 - **WASD** — mover
 - **Click izquierdo** — disparar
 
-### Plane Shooter
+***Plane Shooter***
 - **Flechas** — mover nave
 
 ### Dodge the Creeps
