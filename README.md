@@ -16,7 +16,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 | Juego | Descripción |
 |-------|-------------|
-| 🐍 Snake Guau | Come manzanas y crece sin chocarte contigo mismo |
+| 🐍 Snake Guau | Come manzanas y crece sin chocarte |
 | 🧱 Tetris Guau | Encaja piezas y completa líneas |
 | 🎱 Billar Guau | Mete todas las bolas con el menor número de golpes |
 | 🏓 Ping Pong Guau | Duelo de paletas para 2 jugadores |
