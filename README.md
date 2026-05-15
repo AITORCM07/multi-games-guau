@@ -78,7 +78,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 ---
 
 ## ***Plane Shooter***
-- **RATON** — Presionando la nave para poder moverla
+- **Click izquierdo** — Presionando la nave para poder moverla
 - **ESPACIO** — Pulsar para disparar
 ![PLANE SHOOTER GUAU](PLANE.webp)
 
