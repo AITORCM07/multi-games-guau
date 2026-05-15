@@ -6,7 +6,7 @@ Un proyecto de videojuegos desarrollado en **Godot Engine 4.6** que reúne 8 jue
 
 ---
 
-***Descripción:***
+## ***Descripción:***
 
 MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde cero usando Godot Engine y GDScript. El proyecto incluye un sistema de puntuaciones compartido entre todos los juegos y una pantalla de selección de juegos central.
 
