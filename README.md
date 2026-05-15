@@ -44,11 +44,15 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 - **Flechas** o **WASD** — mover la serpiente
 ![SNAKE GUAU](SNAKE.webp)
 
+---
+
 ## ***Tetris***
 - **A/D** — mover pieza izquierda/derecha
 - **S** — bajar pieza más rápido
 - **W** — rotar pieza
 ![TETRIS GUAU](TETRIS.webp)
+
+---
 
 ## ***Billar***
 - **Ratón** — apuntar
@@ -56,25 +60,35 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 - **ESC** — volver al menú
 ![BILLAR GUAU](BILLAR.webp)
 
+---
+
 ## ***Ping Pong***
 - **Jugador 1 (rojo):** W/S
 - **Jugador 2 (azul):** ↑/↓
 - **ESC** — volver al menú
 ![PING PONG GUAU](PING.webp)
 
+---
+
 ## ***Space Invaders***
 - **WASD** — mover
 - **Click izquierdo** — disparar
 ![SPACE INVADERS GUAU](SPACE.webp)
+
+---
 
 ## ***Plane Shooter***
 - **RATON** — Presionando la nave para poder moverla
 - **ESPACIO** — Pulsar para disparar
 ![PLANE SHOOTER GUAU](PLANE.webp)
 
+---
+
 ### ***Dodge the Creeps****
 - **Flechas** o **WASD** — mover personaje
 ![DOGDE THE CREEPS GUAU](DOGDE.webp)
+
+---
 
 ### ****Busca Minas****
 - **Click izquierdo** — descubrir casilla
