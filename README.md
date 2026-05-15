@@ -54,7 +54,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 - **Ratón** — apuntar
 - **Click izquierdo** — cargar y disparar
 - **ESC** — volver al menú
-![BILLAR GUAU](Billar.webp)
+![BILLAR GUAU](BILLAR.webp)
 
 ## ***Ping Pong***
 - **Jugador 1 (rojo):** W/S
