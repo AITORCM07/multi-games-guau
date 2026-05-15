@@ -12,7 +12,7 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ---
 
-***🕹️ Juegos incluidos***
+## ***🕹️ Juegos incluidos 🕹️***
 
 | Juego | Descripción |
 |-------|-------------|
