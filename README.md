@@ -4,13 +4,13 @@ Un proyecto de videojuegos desarrollado en **Godot Engine 4.6** que reúne 8 jue
 
 **[Jugar aquí](https://aitorcm07.github.io/Pagina-Web-MULTI-GAMES-GUAU/)**
 
-![MENU PRINCIPAL](FOTON4.png)
+![MENU PRINCIPAL](MENU.webp)
 ---
 
 ## **Descripción:**
 
 MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde cero usando Godot Engine y GDScript. El proyecto incluye un sistema de puntuaciones compartido entre todos los juegos y una pantalla de selección de juegos central.
-![SELECION DE JUEGOS](MENU.webp)
+![SELECION DE JUEGOS](SELECION.webp)
 
 ---
 
@@ -42,48 +42,48 @@ MULTI GAMES GUAU! es una colección de 8 minijuegos clásicos recreados desde ce
 
 ## ***Snake***
 - **Flechas** o **WASD** — mover la serpiente
-![SNAKE GUAU](FOTON4.png)
+![SNAKE GUAU](SNAKE.webp)
 
 ## ***Tetris***
 - **A/D** — mover pieza izquierda/derecha
 - **S** — bajar pieza más rápido
 - **W** — rotar pieza
-![TETRIS GUAU](FOTON4.png)
+![TETRIS GUAU](TETRIS.webp)
 
 ## ***Billar***
 - **Ratón** — apuntar
 - **Click izquierdo** — cargar y disparar
 - **ESC** — volver al menú
-![BILLAR GUAU](FOTON4.png)
+![BILLAR GUAU](Billar.webp)
 
 ## ***Ping Pong***
 - **Jugador 1 (rojo):** W/S
 - **Jugador 2 (azul):** ↑/↓
 - **ESC** — volver al menú
-![PING PONG GUAU](FOTON4.png)
+![PING PONG GUAU](PING.webp)
 
 ## ***Space Invaders***
 - **WASD** — mover
 - **Click izquierdo** — disparar
-![SPACE INVADERS GUAU](FOTON4.png)
+![SPACE INVADERS GUAU](SPACE.webp)
 
 ## ***Plane Shooter***
 - **RATON** — Presionando la nave para poder moverla
 - **ESPACIO** — Pulsar para disparar
-![PLANE SHOOTER GUAU](FOTON4.png)
+![PLANE SHOOTER GUAU](PLANE.webp)
 
 ### ***Dodge the Creeps****
 - **Flechas** o **WASD** — mover personaje
-![DOGDE THE CREEPS GUAU](FOTON4.png)
+![DOGDE THE CREEPS GUAU](DOGDE.webp)
 
 ### ****Busca Minas****
 - **Click izquierdo** — descubrir casilla
 - **Click derecho** — poner bandera
-![BUSCA MINAS GUAU](FOTON4.png)
+![BUSCA MINAS GUAU](MINAS.webp)
 
 ---
 
-## 📊 Sistema de puntuaciones
+## ***Sistema de puntuaciones***
 
 Cada juego guarda su mejor puntuación:
 - 🐍 Snake — manzanas comidas
